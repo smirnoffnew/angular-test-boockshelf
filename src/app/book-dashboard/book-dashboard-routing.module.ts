@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BookDashboardComponent } from '@app/book-dashboard/component/book-dashboard.component';
-import { CardBookComponent } from '@app/book-dashboard/component/card-book/card-book.component';
+import { BookDashboardComponent } from '@app/book-dashboard/components/book-dashboard.component';
+import { CardBookComponent } from '@app/book-dashboard/components/card-book/card-book.component';
 
 const routes: Routes = [
   {

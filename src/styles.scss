@@ -56,3 +56,11 @@
   @include angular-material-theme($anms-nature-theme);
   @include custom-components-theme($anms-nature-theme);
 }
+
+.list-card{
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}

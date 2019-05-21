@@ -38,7 +38,7 @@ describe('StockMarketContainerComponent', () => {
   const getCaretUpDownItem = () =>
     fixture.debugElement.query(By.css('mat-card fa-icon[icon="caret-down"]'));
 
-  describe('given component booted', () => {
+  describe('given components booted', () => {
     beforeEach(async(() => {
       TestBed.configureTestingModule({
         imports: [CoreModule, TestingModule],

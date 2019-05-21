@@ -11,7 +11,7 @@ import { StockMarketContainerComponent } from './stock-market/components/stock-m
 import { CrudComponent } from './crud/components/crud.component';
 import { FormComponent } from './form/components/form.component';
 import { NotificationsComponent } from './notifications/components/notifications.component';
-import { BookDashboardComponent } from '../book-dashboard/component/book-dashboard.component';
+import { BookDashboardComponent } from '../book-dashboard/components/book-dashboard.component';
 
 const routes: Routes = [
   {

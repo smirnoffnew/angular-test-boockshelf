@@ -4,8 +4,8 @@ import { ChartjsModule } from '@ctrl/ngx-chartjs';
 import { BookDashboardService } from '@app/book-dashboard/service/book-dashboard.service';
 import { SharedModule } from '@app/shared';
 import { BookDashboardRoutingModule } from './book-dashboard-routing.module';
-import { CardBookComponent } from './component/card-book/card-book.component';
-import { BookDashboardComponent } from './component/book-dashboard.component';
+import { CardBookComponent } from './components/card-book/card-book.component';
+import { BookDashboardComponent } from './components/book-dashboard.component';
 import { ListAuthorsService } from '@app/book-dashboard/service/book-authors.service';
 
 @NgModule({

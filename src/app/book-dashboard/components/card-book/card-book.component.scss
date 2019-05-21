@@ -23,6 +23,15 @@
   text-align: right;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: auto;
+  }
+}
+
 :host button{
   margin: 10px 70px 10px 10px;
   align-self: flex-end;

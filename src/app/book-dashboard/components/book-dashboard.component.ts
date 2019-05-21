@@ -73,9 +73,9 @@ export class BookDashboardComponent implements OnInit {
 
   filterMonth = (books: BookDashboard[], month: string[]) => {
     return month.map( (monthItem, monthIndex) => {
-      return books
-        .filter(bookItem => new Date(bookItem.PublishDate).getMonth() === monthIndex)
-        .reduce( (a, b) => a + b.PageCount, 0 );
+      const booksBuff = books.filter(bookItem => new Date(bookItem.PublishDate).getMonth() === monthIndex);
+      const sum = booksBuff.reduce( (a, b) => (a + b.PageCount), 0 );
+      return (booksBuff.length || sum)  === 0 ? 0 : sum / booksBuff.length;
     })
   }
 }
