@@ -1,0 +1,29 @@
+:host{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+:host div{
+  width: 100%;
+}
+:host .detailsCard{
+  margin: 30px;
+  width: 800px;
+}
+.detailsCard mat-card-header>div{
+  width: 100%;
+  text-align: right;
+}
+
+.detailsCard mat-card-header mat-card-title,
+.detailsCard mat-card-header mat-card-subtitle{
+  width: 100%;
+  text-align: right;
+}
+
+:host button{
+  margin: 10px 70px 10px 10px;
+  align-self: flex-end;
+}

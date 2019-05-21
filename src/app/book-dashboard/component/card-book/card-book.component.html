@@ -1,0 +1,15 @@
+
+<mat-card class="detailsCard mat-elevation-z10">
+  <mat-card-header>
+    <mat-card-title>{{(bookDashboard$ | async)?.Title }} </mat-card-title>
+    <mat-card-subtitle>it has {{(bookDashboard$ | async)?.PageCount}} pages </mat-card-subtitle>
+    <mat-card-subtitle>{{(bookDashboard$ | async)?.PublishDate | date:'dd MMMM yyyy'}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Description : {{(bookDashboard$ | async)?.Description }}</p>
+    <p>Excerpt: </p>
+    <p>{{(bookDashboard$ | async)?.Excerpt }}</p>
+  </mat-card-content>
+</mat-card>
+
+<button routerLink="/book" mat-raised-button color="primary" > Go Back </button>

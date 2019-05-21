@@ -1,0 +1,24 @@
+<mat-card  class="chartjs mat-elevation-z10" *ngIf="data.labels">
+  <ngx-chartjs [data]="data" type="bar" ></ngx-chartjs>
+</mat-card>
+
+<div class="list-card">
+  <mat-card class="card mat-elevation-z10" *ngFor="let cardBook of bookDashboard$ | async"  >
+    <mat-card-header>
+      <mat-card-title *ngIf="cardBook && cardBook.Title">{{cardBook.Title}}</mat-card-title>
+      <mat-card-subtitle *ngIf="cardBook && cardBook.PublishDate">{{cardBook.PublishDate | date:'dd MM yyyy'}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p *ngIf="cardBook && cardBook.Description">{{cardBook.Description}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="toggle()">Author</button>
+      <a  *ngIf="cardBook && cardBook.ID" [routerLink]="'detail/' + cardBook.ID" mat-button>Details</a>
+    </mat-card-actions>
+    <mat-card-content *ngIf="isOpenAuthor">
+      <p *ngIf="cardBook && cardBook.author">{{cardBook.author}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
